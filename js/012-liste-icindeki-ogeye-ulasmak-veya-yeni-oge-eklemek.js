@@ -18,7 +18,7 @@ liDOM2.innerHTML = "oge2";
 ulDOM.append(liDOM);
 ulDOM.append(liDOM2);
 
-//TODO erneği
+//TODO örnek uygulama
 var liste = document.querySelector("ul");
 var urun = document.querySelector("#veri");
 var ekleButonu = document.querySelector("#ekle");
