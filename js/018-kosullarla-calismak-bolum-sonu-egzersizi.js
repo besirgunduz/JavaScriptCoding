@@ -37,7 +37,6 @@ let textInfo;
 let info = document.querySelector("#info")
 
 if (examGrade >= 0 && examGrade <= 100) {
-    // tum if yapilari buraya gelsin
     textInfo = SMILE
     info.classList.add('text-primary')
     if (examGrade >= 90) {
