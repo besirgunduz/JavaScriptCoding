@@ -1,8 +1,10 @@
-// ********** prompt ile Kullanicidan Bilgi Almak **********
-// https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
+//prompt ile Kullanicidan Bilgi Almak
 
-let fullName = prompt("Lutfen Adinizi Giriniz: ")
+let userName=prompt("Adınızı giriniz : ");
+console.log("Merhaba "+userName);
 
-let greeting = document.querySelector("#greeting")
+let title=document.querySelector("#title");
 
-greeting.innerHTML = `${greeting.innerHTML} <small style="color:red">${fullName}</small>`
+title.innerHTML =`${title.innerHTML} <small style="color:red">${userName}</small>`;
+
+prompt("Boyunuzu giriniz", "Örnek: 166 cm");
