@@ -1,16 +1,8 @@
 // ********** Fonksiyonlara Parametreler Atamak ve Fonksiyondan Geridonus Almak **********
 
-// Temel Kurallar:
-// 1: Bir Fonksiyon Bir veya Birden Fazla Parametre Alabilir veya Hic Almayabilir
-// 2: Bir Fonksiyon Disari Bilgi Gonderebilir(return) veya Gondermeyebilir
-// 3: Mumkunse Fonksiyonun Bagimliliklarini Azaltmak Gerekir
+let firstName = "Beşir"
 
-
-let firstName = "Lorem"
-
-function greetings(firstName="", lastName="") { // default parametre aliyor..
-    // console.log(`Merhaba ${firstName ? firstName : ""}`)
-    // console.log(`Merhaba ${firstName}`)
+function greetings(firstName="", lastName="default") { // default parametre alabilir
     console.log(`Merhaba ${firstName} ${lastName}`)
 } 
 
@@ -36,4 +28,13 @@ let htmlInfo = `<span style="color:red">Color REDDDD</span>`
 
 domIdWriteInfo('greeting', htmlInfo)
 domIdWriteInfo('info', greetings2("Lorem", "Ipsum") )
+
+//ornek
+const PI=3.14;
+let daireAlaniHesapla = (r)=>{
+    let islemSonucu=PI*r*r;
+    return islemSonucu;
+}
+
+console.log("Daire alanı = "+daireAlaniHesapla(3));
 
