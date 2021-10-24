@@ -1,16 +1,25 @@
 // While Dongusu
-// https://www.w3schools.com/js/js_loop_while.asp
 
-// let counter = 0;
+let counter = 0;
 
-// while ( counter < 10 ) {
-//   console.log(counter)
-//   counter ++
-// }
+while (counter < 10) {
+  console.log(counter);
+  counter++;
+}
 
-let userName = ""
+//örnek
+let userName = "";
 
 while (!userName) {
-  userName = prompt("Kullanici Adini Giriniz: ")
-  console.log(userName)
+  userName = prompt("Kullanici Adini Giriniz: ");
+  console.log(userName);
+}
+
+//örnek
+let arabalar = ["Honda", "BMW"];
+let index = 0;
+
+while (arabalar[index]) {
+  console.log(arabalar[index]);
+  index++;
 }
