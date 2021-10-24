@@ -29,6 +29,7 @@
                 <div class="col-sm-8 offset-sm-2">
                     <form id="userForm">
                         <input type="number" name="score" id="score">
+                        <button class="btn btn-danger" type="reset">Reset</button>
                         <button class="btn btn-success" type="submit">Gönder</button>
                     </form>
                 </div>
@@ -36,10 +37,15 @@
         </div>
 
         <form onsubmit="handleSubmit(e)" autocomplete="on" method="POST">
-            <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz"
-                onchange="handleChange(event)" /><input type="password" name="password" placeholder="Şifrenizi giriniz."
-                onchange="handleChange(event)" /><button type="submit">Giriş</button>
+            <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz" onchange="handleChange(event)" />
+            <input type="password" name="password" placeholder="Şifrenizi giriniz." onchange="handleChange(event)" />
+            <button type="submit">Giriş</button>
         </form>
+
+        <input type="text" name="mesaj" id="myInput">
+        <button onclick="myFunction()">Tıklayınız</button>
+        <p id="myP"></p>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="js/001-hello-world.js"></script> -->
@@ -68,7 +74,8 @@
         <!-- <script src="js/024-localStorage-icerisine-veri-eklemek-duzenlemek-ve-silmek.js"></script> -->
         <!-- <script src="js/025-localStorage-icerisinde-farkli-turde-bilgilerin-saklanmasi.js"></script> -->
         <!-- <script src="js/026-localStorage-bolum-sonu-egzersizi.js"></script> -->
-        <script src="js/027-form-submit-yonetimi.js"></script>
+        <!-- <script src="js/027-form-submit-yonetimi.js"></script> -->
+        <script src="js/028-input-icerisindeki-veriyi-almak.js"></script>
 
     </body>
 
