@@ -6,6 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 10px 40px;
+            font-size: 19px;
+            color: #333;
+        }
+
+        .box {
+            padding-left: 20px;
+            width: 280px;
+            margin-right: 20px;
+            float: left;
+
+            border-right: 1px solid #333;
+        }
+
+        button {
+            margin-bottom: 10px;
+            padding: 6px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        p {
+            margin-bottom: 10px;
+            display: block;
+            clear: both;
+        }
+
+        input {
+            width: 50px;
+            margin-right: 10px;
+            padding: 5px 8px;
+            float: left;
+        }
+    </style>
     <title>JavaScript Coding</title>
 </head>
 
@@ -24,7 +60,14 @@
 
         <h1 id="info">Merhaba Dünya</h1>
 
-        <ul class="list-group" id="userList"></ul>
+        <div class="box">
+            <h4>Try, Catch and Throw</h4>
+            <p>Please input a number between 5 and 10:</p>
+
+            <input type="text" id="get-value" value="" />
+            <button onclick="getValue()">Get Valu of Input</button>
+            <p id="error-message"></p>
+        </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -69,7 +112,8 @@
         <!-- <script src="js/039-object-nedir-nasil-olusturulur.js"></script> -->
         <!-- <script src="js/040-object-key-ve-value-yapisinin-kullanimi.js"></script> -->
         <!-- <script src="js/041-object-icinde-metot-nasil-ekleriz.js"></script> -->
-        <script src="js/042-object-ve-array-destructuring-nasil-kullanilir.js"></script>
+        <!-- <script src="js/042-object-ve-array-destructuring-nasil-kullanilir.js"></script> -->
+        <script src="js/043-hata-yonetimi-icin-try-catch-kullanimi.js"></script>
     </body>
 
     </html>
